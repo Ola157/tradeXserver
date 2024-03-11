@@ -8,6 +8,8 @@ app.use(cors())
 
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
+
 const getRoute = require('./Route/getRoute')
 
 app.use('/fetchRate', getRoute)

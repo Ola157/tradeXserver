@@ -1,5 +1,5 @@
 const express = require('express')
-const { handleFetchRate } = require('./getControl')
+const { handleFetchRate } = require('../Control/getControl')
 const router = express.Router()
 
 router.get('/liveRate', handleFetchRate)

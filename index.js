@@ -8,7 +8,7 @@ app.use(cors())
 
 app.use(express.urlencoded({ extended: true }));
 
-const getRoute = require('./getRoute')
+const getRoute = require('./Route/getRoute')
 
 app.use('/fetchRate', getRoute)
 

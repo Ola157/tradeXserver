@@ -1,6 +1,7 @@
 const { default: axios } = require("axios");
 
 exports.handleFetchRate = async (req, res) => {
+    console.log('helllo')
 
     await axios.get('https://pro-api.coinmarketcap.com/v1/cryptocurrency/map ', {
         headers: {

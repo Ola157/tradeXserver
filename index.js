@@ -12,6 +12,6 @@ const getRoute = require('./getRoute')
 
 app.use('/fetchRate', getRoute)
 
-app.listen(process.env.port, () => {
+app.listen(process.env.port || 9080, () => {
     console.log(process.env.port)
 })

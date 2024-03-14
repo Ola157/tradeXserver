@@ -1,7 +1,6 @@
 const { default: axios } = require("axios");
 
 exports.handleFetchRate = async (req, res) => {
-    console.log('helllo')
 
     await axios.get('https://pro-api.coinmarketcap.com/cryptocurrency ', {
         headers: {
@@ -14,6 +13,6 @@ exports.handleFetchRate = async (req, res) => {
             res.json(data)
         })
         .catch((error) => {
-            console.error('Error fetching exchange rates:', error);
+            res.send('Error fetching exchange rates:', error);
         });
 };

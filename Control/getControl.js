@@ -9,6 +9,7 @@ exports.handleFetchRate = async (req, res) => {
         },
     })
         .then((response) => {
+            console.log(data)
             const { data } = response.data
             res.json(data)
         })

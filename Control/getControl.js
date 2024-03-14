@@ -13,6 +13,6 @@ exports.handleFetchRate = async (req, res) => {
             res.json(data)
         })
         .catch((error) => {
-            res.send('Error fetching exchange rates:', error);
+            res.send(error);
         });
 };
